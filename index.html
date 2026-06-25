@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0d" />
+    <meta
+      name="description"
+      content="Lokesh S. — Full Stack Developer based in Chennai. 3+ years at DEVIMS building thoughtful web applications."
+    />
+    <title>Lokesh S. — Full Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ls-bg" aria-hidden="true">
+      <div class="ls-bg-grain"></div>
+      <div class="ls-bg-glow ls-bg-glow-1"></div>
+      <div class="ls-bg-glow ls-bg-glow-2"></div>
+    </div>
+
+    <!-- ====== NAV ====== -->
+    <nav class="ls-nav" data-testid="main-nav">
+      <a href="#home" class="ls-brand" data-testid="brand-link">
+        <span class="ls-brand-mark">LS</span>
+        <span class="ls-brand-name">Lokesh S.</span>
+      </a>
+      <ul class="ls-nav-list">
+        <li>
+          <a href="#home" class="ls-nav-link is-active" data-nav="home" data-testid="nav-home">
+            <span class="ls-nav-dot"></span>Home
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="ls-nav-link" data-nav="about" data-testid="nav-about">
+            <span class="ls-nav-dot"></span>About
+          </a>
+        </li>
+        <li>
+          <a href="#work" class="ls-nav-link" data-nav="work" data-testid="nav-work">
+            <span class="ls-nav-dot"></span>Work
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="ls-nav-link" data-nav="contact" data-testid="nav-contact">
+            <span class="ls-nav-dot"></span>Contact
+          </a>
+        </li>
+      </ul>
+      <a
+        href="mailto:lokeshsdev11@gmail.com"
+        class="ls-nav-cta"
+        data-testid="nav-cta-email"
+      >
+        Let's talk <span aria-hidden="true">→</span>
+      </a>
+    </nav>
+
+    <main class="ls-main">
+      <!-- ====== HERO ====== -->
+      <section id="home" class="ls-hero" data-testid="hero-section">
+        <div class="ls-hero-meta">
+          <span class="ls-hero-meta-dot" aria-hidden="true"></span>
+          <span data-testid="hero-availability">Available for new projects</span>
+          <span class="ls-hero-meta-sep">·</span>
+          <span data-testid="hero-time" id="ls-time">—</span>
+        </div>
+
+        <div class="ls-hero-grid">
+          <div class="ls-hero-left">
+            <p class="ls-eyebrow" data-testid="hero-eyebrow">Portfolio — 2025</p>
+            <h1 class="ls-display" data-testid="hero-name">
+              Lokesh<span class="ls-display-italic"> S.</span>
+            </h1>
+            <h2 class="ls-subdisplay" data-testid="hero-role">
+              Full Stack Developer<span class="ls-subdisplay-mute"> · Chennai</span>
+            </h2>
+            <p class="ls-lede" data-testid="hero-bio">
+              Full Stack Developer at DEVIMS with 3+ years of experience crafting
+              performant, user-first web applications. I build interfaces that feel
+              effortless and systems that quietly do the heavy lifting — from idea to
+              deployment.
+            </p>
+
+            <div class="ls-hero-cta">
+              <a href="#work" class="ls-btn ls-btn-primary" data-testid="hero-view-work">
+                View Selected Work <span aria-hidden="true">↘</span>
+              </a>
+              <a href="#contact" class="ls-btn ls-btn-ghost" data-testid="hero-get-in-touch">
+                Get in touch
+              </a>
+            </div>
+
+            <div class="ls-hero-stats" data-testid="hero-stats">
+              <div>
+                <span class="ls-stat-num">3+</span>
+                <span class="ls-stat-label">Years of experience</span>
+              </div>
+              <div>
+                <span class="ls-stat-num">4+</span>
+                <span class="ls-stat-label">Shipped projects</span>
+              </div>
+              <div>
+                <span class="ls-stat-num">DEVIMS</span>
+                <span class="ls-stat-label">Currently building at</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ls-hero-right">
+            <div class="ls-portrait" data-testid="hero-portrait">
+              <img src="./profile.jpg" alt="Lokesh S. portrait" />
+              <div class="ls-portrait-frame" aria-hidden="true"></div>
+              <div class="ls-portrait-badge" aria-hidden="true">
+                <span>★</span> Full Stack
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== ABOUT ====== -->
+      <section id="about" class="ls-section" data-testid="about-section">
+        <div class="ls-section-head">
+          <span class="ls-section-num">01</span>
+          <h3 class="ls-section-title">
+            About <span class="ls-italic">— the person behind the code.</span>
+          </h3>
+        </div>
+
+        <div class="ls-about-grid">
+          <p class="ls-about-text" data-testid="about-text-1">
+            I'm Lokesh, a Full Stack Developer based in
+            <span class="ls-hl">Chennai</span>. For the last
+            <span class="ls-hl">3+ years</span> I've been at
+            <span class="ls-hl">DEVIMS</span>, designing and shipping web products
+            end-to-end — from crisp UIs to the APIs and data layers that power
+            them.
+          </p>
+          <p class="ls-about-text" data-testid="about-text-2">
+            My work sits at the intersection of clarity, performance and a quiet
+            attention to detail. I enjoy turning fuzzy ideas into shipped,
+            dependable software — and I'm increasingly fascinated by what AI and
+            TensorFlow can add to everyday products.
+          </p>
+
+          <div class="ls-info-card" data-testid="about-info-card">
+            <div class="ls-info-row">
+              <span class="ls-info-key">Based in</span>
+              <span class="ls-info-val">Chennai, India</span>
+            </div>
+            <div class="ls-info-row">
+              <span class="ls-info-key">Role</span>
+              <span class="ls-info-val">Full Stack Developer</span>
+            </div>
+            <div class="ls-info-row">
+              <span class="ls-info-key">Experience</span>
+              <span class="ls-info-val">3+ years</span>
+            </div>
+            <div class="ls-info-row">
+              <span class="ls-info-key">Working at</span>
+              <span class="ls-info-val">DEVIMS</span>
+            </div>
+            <div class="ls-info-row">
+              <span class="ls-info-key">Open to</span>
+              <span class="ls-info-val">Freelance · Collaborations</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== SKILLS ====== -->
+      <section id="skills" class="ls-section" data-testid="skills-section">
+        <div class="ls-section-head">
+          <span class="ls-section-num">02</span>
+          <h3 class="ls-section-title">
+            Toolkit <span class="ls-italic">— things I build with daily.</span>
+          </h3>
+        </div>
+
+        <div class="ls-skills-grid">
+          <div class="ls-skill-group" data-testid="skill-group-frontend">
+            <p class="ls-skill-group-title">Frontend</p>
+            <ul>
+              <li class="ls-skill-chip" data-testid="skill-react">React</li>
+              <li class="ls-skill-chip" data-testid="skill-javascript">JavaScript</li>
+              <li class="ls-skill-chip" data-testid="skill-html">HTML</li>
+              <li class="ls-skill-chip" data-testid="skill-css">CSS</li>
+              <li class="ls-skill-chip" data-testid="skill-tailwind">Tailwind</li>
+              <li class="ls-skill-chip" data-testid="skill-bootstrap">Bootstrap</li>
+            </ul>
+          </div>
+          <div class="ls-skill-group" data-testid="skill-group-backend">
+            <p class="ls-skill-group-title">Backend</p>
+            <ul>
+              <li class="ls-skill-chip" data-testid="skill-node">Node.js</li>
+              <li class="ls-skill-chip" data-testid="skill-express">Express</li>
+            </ul>
+          </div>
+          <div class="ls-skill-group" data-testid="skill-group-database">
+            <p class="ls-skill-group-title">Database</p>
+            <ul>
+              <li class="ls-skill-chip" data-testid="skill-mongodb">MongoDB</li>
+              <li class="ls-skill-chip" data-testid="skill-sql">SQL</li>
+            </ul>
+          </div>
+          <div class="ls-skill-group" data-testid="skill-group-ai-ml">
+            <p class="ls-skill-group-title">AI / ML</p>
+            <ul>
+              <li class="ls-skill-chip" data-testid="skill-tensorflow">TensorFlow</li>
+              <li class="ls-skill-chip" data-testid="skill-ai">AI</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== WORK ====== -->
+      <section id="work" class="ls-section" data-testid="work-section">
+        <div class="ls-section-head">
+          <span class="ls-section-num">03</span>
+          <h3 class="ls-section-title">
+            Selected Work <span class="ls-italic">— four pieces, shipped &amp; live.</span>
+          </h3>
+        </div>
+
+        <div class="ls-projects-grid">
+          <a
+            href="https://shimmering-kitsune-a256c5.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            class="ls-project"
+            data-testid="project-trabook"
+            style="--i:0"
+          >
+            <div class="ls-project-top">
+              <span class="ls-project-index">01</span>
+              <span class="ls-project-live"><span class="ls-live-dot"></span>Live</span>
+            </div>
+            <div class="ls-project-body">
+              <h4 class="ls-project-title">TraBook</h4>
+              <p class="ls-project-blurb">
+                A clean, modern travel booking experience. Browse destinations, plan
+                itineraries and book seamlessly.
+              </p>
+            </div>
+            <div class="ls-project-foot">
+              <ul class="ls-project-tech">
+                <li>React</li><li>JavaScript</li><li>CSS</li>
+              </ul>
+              <span class="ls-project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://chimerical-moonbeam-7cabc6.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            class="ls-project"
+            data-testid="project-bill-generator"
+            style="--i:1"
+          >
+            <div class="ls-project-top">
+              <span class="ls-project-index">02</span>
+              <span class="ls-project-live"><span class="ls-live-dot"></span>Live</span>
+            </div>
+            <div class="ls-project-body">
+              <h4 class="ls-project-title">Bill Generator</h4>
+              <p class="ls-project-blurb">
+                Generate professional invoices on the fly. Add items, calculate totals
+                and print-ready receipts in seconds.
+              </p>
+            </div>
+            <div class="ls-project-foot">
+              <ul class="ls-project-tech">
+                <li>React</li><li>Tailwind</li><li>JavaScript</li>
+              </ul>
+              <span class="ls-project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://dainty-lollipop-b0e9e5.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            class="ls-project"
+            data-testid="project-expense-tracker"
+            style="--i:2"
+          >
+            <div class="ls-project-top">
+              <span class="ls-project-index">03</span>
+              <span class="ls-project-live"><span class="ls-live-dot"></span>Live</span>
+            </div>
+            <div class="ls-project-body">
+              <h4 class="ls-project-title">Expense Tracker</h4>
+              <p class="ls-project-blurb">
+                Track day-to-day expenses with a focused, distraction-free interface.
+                Categories, summaries and quick entry.
+              </p>
+            </div>
+            <div class="ls-project-foot">
+              <ul class="ls-project-tech">
+                <li>React</li><li>CSS</li><li>LocalStorage</li>
+              </ul>
+              <span class="ls-project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://expensetracker102.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            class="ls-project"
+            data-testid="project-income-calculator"
+            style="--i:3"
+          >
+            <div class="ls-project-top">
+              <span class="ls-project-index">04</span>
+              <span class="ls-project-live"><span class="ls-live-dot"></span>Live</span>
+            </div>
+            <div class="ls-project-body">
+              <h4 class="ls-project-title">Income Calculator</h4>
+              <p class="ls-project-blurb">
+                Plan income, taxes and take-home with simple inputs. Realtime
+                calculations with a calm, clear UI.
+              </p>
+            </div>
+            <div class="ls-project-foot">
+              <ul class="ls-project-tech">
+                <li>React</li><li>JavaScript</li><li>CSS</li>
+              </ul>
+              <span class="ls-project-arrow" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ====== CONTACT ====== -->
+      <section id="contact" class="ls-section" data-testid="contact-section">
+        <div class="ls-section-head">
+          <span class="ls-section-num">04</span>
+          <h3 class="ls-section-title">
+            Contact <span class="ls-italic">— let's make something good.</span>
+          </h3>
+        </div>
+
+        <div class="ls-contact-grid">
+          <div class="ls-contact-cta">
+            <p class="ls-contact-pre">Have a project in mind?</p>
+            <a
+              href="mailto:lokeshsdev11@gmail.com"
+              class="ls-contact-mail"
+              data-testid="contact-email-link"
+            >
+              lokeshsdev11@gmail.com <span aria-hidden="true">↗</span>
+            </a>
+            <div class="ls-contact-actions">
+              <button
+                type="button"
+                id="ls-copy"
+                class="ls-btn ls-btn-ghost ls-btn-sm"
+                data-testid="contact-copy-email"
+              >
+                Copy email
+              </button>
+              <a
+                href="mailto:lokeshsdev11@gmail.com"
+                class="ls-btn ls-btn-primary ls-btn-sm"
+                data-testid="contact-send-email"
+              >
+                Send a message
+              </a>
+            </div>
+          </div>
+
+          <ul class="ls-socials" data-testid="contact-socials">
+            <li>
+              <a
+                href="https://github.com/lokeshsdev11-dev"
+                target="_blank"
+                rel="noreferrer"
+                data-testid="contact-github"
+              >
+                <span class="ls-social-key">GitHub</span>
+                <span class="ls-social-val">@lokeshsdev11-dev</span>
+                <span class="ls-social-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lokesh-s-819893419/"
+                target="_blank"
+                rel="noreferrer"
+                data-testid="contact-linkedin"
+              >
+                <span class="ls-social-key">LinkedIn</span>
+                <span class="ls-social-val">in/lokesh-s</span>
+                <span class="ls-social-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:lokeshsdev11@gmail.com"
+                data-testid="contact-email-card"
+              >
+                <span class="ls-social-key">Email</span>
+                <span class="ls-social-val">lokeshsdev11@gmail.com</span>
+                <span class="ls-social-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ls-footer" data-testid="footer">
+      <div class="ls-footer-row">
+        <span id="ls-year">© Lokesh S.</span>
+        <span class="ls-footer-mid">
+          Designed &amp; built in Chennai · Coffee, code, repeat.
+        </span>
+        <a href="#home" data-testid="footer-back-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
